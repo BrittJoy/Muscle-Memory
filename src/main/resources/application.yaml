@@ -1,0 +1,12 @@
+spring:
+   datasource:
+      username: muscle-memory
+      password: muscle-memory
+      url: jdbc:mysql://localhost:3306/muscle-memory
+      
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+      
+ 

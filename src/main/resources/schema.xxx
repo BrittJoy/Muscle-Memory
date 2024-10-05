@@ -1,0 +1,33 @@
+
+DROP TABLE IF EXISTS routine_exercise;
+DROP TABLE IF EXISTS exercise;
+DROP TABLE IF EXISTS routine;
+DROP TABLE IF EXISTS weekday;
+
+
+CREATE TABLE weekday (
+	weekday_id int NOT NULL AUTO_INCREMENT,
+	weekdays varchar(50) NOT NULL,
+	PRIMARY KEY (weekday_id)
+);
+
+CREATE TABLE routine (
+	routine_id int NOT NULL AUTO_INCREMENT,
+	routine_name varchar(150) NOT NULL,
+	weekday_id int NOT NULL,
+	PRIMARY KEY (routine_id),
+	FOREIGN KEY (weekday_id) REFERENCES weekday (weekday_id) ON DELETE CASCADE
+);
+
+CREATE TABLE exercise (
+	exercise_id int NOT NULL AUTO_INCREMENT,
+	exercise_name varchar(258) NOT NULL,
+	PRIMARY KEY (exercise_id)
+);
+
+CREATE TABLE routine_exercise (
+	routine_id int NOT NULL,
+	exercise_id int NOT NULL,
+	FOREIGN KEY (routine_id) REFERENCES routine (routine_id) ON DELETE CASCADE,
+	FOREIGN KEY (exercise_id) REFERENCES exercise (exercise_id) ON DELETE CASCADE
+);

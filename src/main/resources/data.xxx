@@ -1,0 +1,16 @@
+INSERT INTO exercise (exercise_name) VALUES ('squat');
+INSERT INTO exercise (exercise_name) VALUES ('lunge');
+INSERT INTO exercise (exercise_name) VALUES ('push-up');
+INSERT INTO exercise (exercise_name) VALUES ('plank');
+INSERT INTO exercise (exercise_name) VALUES ('glute-bridge');
+INSERT INTO exercise (exercise_name) VALUES ('row');
+INSERT INTO exercise (exercise_name) VALUES ('burpee');
+INSERT INTO exercise (exercise_name) VALUES ('walking');
+INSERT INTO exercise (exercise_name) VALUES ('running');
+INSERT INTO exercise (exercise_name) VALUES ('HITT cardio');
+INSERT INTO exercise (exercise_name) VALUES ('arm circles');
+INSERT INTO exercise (exercise_name) VALUES ('dead bug');
+INSERT INTO exercise (exercise_name) VALUES ('swimming');
+INSERT INTO exercise (exercise_name) VALUES ('tricep dips');
+INSERT INTO exercise (exercise_name) VALUES ('crunches');
+INSERT INTO exercise (exercise_name) VALUES ('donkey kick');
